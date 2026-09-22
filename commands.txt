@@ -1,0 +1,5 @@
+- Task Lookup: Who is picking TSK500101?
+- Pending Work: How many tasks are pending for SHP10001?
+- Unloaded Cartons: Which olpns aren't loaded on SHP10003?
+- Order Readiness: Orders not waved for SHP10002?
+- Workforce Status: Anyone out of work?" or "Who is idle right now?

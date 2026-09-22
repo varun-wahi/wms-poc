@@ -1,0 +1,13 @@
+services:
+  db:
+    image: postgres:16
+    environment: { POSTGRES_DB: wms, POSTGRES_USER: postgres, POSTGRES_PASSWORD: postgres }
+    ports: ["5432:5432"]
+    volumes:   # run once on first start; reset with: docker compose down -v
+      - ./schema.sql:/docker-entrypoint-initdb.d/01_schema.sql:ro
+      - ./seed.sql:/docker-entrypoint-initdb.d/02_seed.sql:ro
+
+  adminer:
+    image: adminer:latest
+    ports: ["8081:8080"]
+

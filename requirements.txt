@@ -1,0 +1,4 @@
+google-adk[mcp]
+psycopg[binary]>=3.1
+pytest
+uvicorn
